@@ -36,3 +36,10 @@ button{
     border: unset;
     cursor: pointer;
 }
+.header{
+    font-size: 28px;
+    color: rgb(5, 8, 187);
+    text-align: center;
+    margin: auto auto;
+    padding: 0px 0px 25px 0px;
+}
