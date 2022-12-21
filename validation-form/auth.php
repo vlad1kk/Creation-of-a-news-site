@@ -8,11 +8,9 @@
     $result = mysqli_query($connect, "SELECT * FROM `users` WHERE `login` = '$login' AND `password` = '$password'");
     $user = mysqli_fetch_assoc($result);
      if(count($user) == 0){
-        echo "Такий користувач не знайдений";
+        echo "This user not found";
         exit();
     }
-
-    setcookie('user', $user['name'], time() + 3600, "/");
 
     header('Location: ../user.php');
     
