@@ -29,7 +29,7 @@ $news = mysqli_fetch_all($news);
             <th>ID</th>
             <th>Name</th>
             <th>Description</th>
-            <th>&#9757;</th>
+            <th>&#129488;</th>
             <th>&#128260;</th>
             <th>&#10060;</th>
         </tr>
