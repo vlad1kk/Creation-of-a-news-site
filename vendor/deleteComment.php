@@ -21,6 +21,7 @@ mysqli_query($connect , "DELETE FROM `comments` WHERE `comments`.`id` = $id");
 
     <hr>
     <span class="delCom">Comment deleted successfully</span>
+    
 
 
 </body>

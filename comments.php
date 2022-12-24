@@ -37,7 +37,29 @@ $com = mysqli_fetch_all($com);
     </form>
 
     <hr>
-    <h3>Comments:</h3>
+    <h3 style="text-align:center">Comments:</h3>
+
+    <table>
+        <tr>
+            <th>Comment &#9997;</th>
+            <th>Update &#128260;</th>
+            <th>Delete &#10060;</th>
+        </tr>
+        <?php
+    foreach ($com as $cmt) {
+        ?>
+            <tr>
+                <td><?= $cmt[2] ?></td>
+                <td><a href="update.php?id=<?= $item[0] ?>">Update</a></td>
+                <td><a style="color: red;" href="vendor/deleteComment.php?id=<?= $cmt[0] ?>">Delete</a></td>
+            </tr>
+        <?php
+        }
+        ?>
+
+    </table>
+<!-- 
+
     
     <?php
     foreach ($com as $cmt) {
@@ -47,7 +69,7 @@ $com = mysqli_fetch_all($com);
         </ul>
     <?php
     }
-    ?>
+    ?> -->
 </body>
 
 </html>
