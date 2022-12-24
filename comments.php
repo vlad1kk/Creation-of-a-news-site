@@ -50,7 +50,7 @@ $com = mysqli_fetch_all($com);
         ?>
             <tr>
                 <td><?= $cmt[2] ?></td>
-                <td><a href="update.php?id=<?= $item[0] ?>">Update</a></td>
+                <td><a href="updateComment.php?id=<?= $cmt[0] ?>">Update</a></td>
                 <td><a style="color: red;" href="vendor/deleteComment.php?id=<?= $cmt[0] ?>">Delete</a></td>
             </tr>
         <?php

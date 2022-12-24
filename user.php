@@ -56,3 +56,7 @@ $news = mysqli_fetch_all($news);
 </body>
 
 </html>
+
+    <!-- echo "<pre>";
+    print_r($comment);
+    echo "</pre>"; -->
