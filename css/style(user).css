@@ -50,3 +50,7 @@
   table{
     margin: auto auto;
   }
+span {
+  color: green;
+  font-size: 20px;
+}

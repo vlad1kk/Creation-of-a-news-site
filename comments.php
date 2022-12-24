@@ -38,11 +38,12 @@ $com = mysqli_fetch_all($com);
 
     <hr>
     <h3>Comments:</h3>
+    
     <?php
     foreach ($com as $cmt) {
     ?>
         <ul>
-            <li><?= $cmt[2] ?></li>
+            <li><?= $cmt[2] ?><a href="vendor/deleteComment.php?id=<?= $cmt[0] ?>"> Delete</a></li>
         </ul>
     <?php
     }

@@ -16,6 +16,9 @@
     <title>Update news</title>
 </head>
 <body>
+<a href="http://localhost:8888/ownsite/user.php">Main</a>
+
+<hr>
 
 <h2>Update news</h2>
     <form action="vendor/update.php" method="post">

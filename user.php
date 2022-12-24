@@ -15,6 +15,9 @@ $news = mysqli_fetch_all($news);
 </head>
 
 <body>
+<a href="http://localhost:8888/ownsite">Sign out</a>
+
+<hr>
     <h2>Add news</h2>
     <form action="vendor/create.php" method="post">
         <p>Name</p>
