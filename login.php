@@ -18,6 +18,7 @@
         <label>Password</label>
         <input type="password" class="form-control" name="password" id="password" placeholder="Enter the admin password">
         <button type="submit" class="btn">Log in</button>
+        <p>Do you want to log in as a user? <a href="index.php">Click here</a></p>
     </form>
 </body>
 
