@@ -63,7 +63,7 @@ $news = mysqli_fetch_all($news);
                 <td><?= $item[1] ?></td>
                 <td><?= $item[2] ?></td>
                 <td><a href="admin/comments.php?id=<?= $item[0] ?>">View</a></td>
-                <td><a href="update.php?id=<?= $item[0] ?>">Update</a></td>
+                <td><a href="updateNewsAdmin.php?id=<?= $item[0] ?>">Update</a></td>
                 <td><a href="vendor/deleteNewsAdmin.php?id=<?= $item[0] ?>">Delete</a></td>
             </tr>
         <?php
