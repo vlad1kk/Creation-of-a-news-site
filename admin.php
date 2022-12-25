@@ -22,6 +22,7 @@ $users = mysqli_fetch_all($users);
             <th style="background-color: purple;">Login</th>
             <th style="background-color: purple;">Password</th>
             <th style="background-color: purple;">Name</th>
+            <th style="background-color: purple;">Update</th>
             <th style="background-color: purple;">Delete</th>
         </tr>
         <?php
@@ -32,6 +33,7 @@ $users = mysqli_fetch_all($users);
                 <td><?= $user[1] ?></td>
                 <td><?= $user[2] ?></td>
                 <td><?= $user[3] ?></td>
+                <td><a href="UpdateUser.php?id=<?= $user[0] ?>">Update</a></td>
                 <td><a style="color: red;" href="vendor/deleteUser.php?id=<?= $user[0] ?>">Delete</a></td>
             </tr>
         <?php
@@ -43,7 +45,3 @@ $users = mysqli_fetch_all($users);
 </body>
 
 </html>
-
-    <!-- echo "<pre>";
-    print_r($comment);
-    echo "</pre>"; -->

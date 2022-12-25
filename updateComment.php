@@ -3,10 +3,6 @@
     $comment_id = $_GET['id'];
     $comment = mysqli_query($connect, "SELECT * FROM `comments` WHERE `id` = '$comment_id'");
     $comment = mysqli_fetch_assoc($comment);
-    echo "<pre>";
-    print_r($comment);
-    echo "</pre>"; 
-
 ?>
 
 
