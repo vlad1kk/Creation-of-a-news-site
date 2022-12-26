@@ -21,7 +21,7 @@
 <hr>
 
 <h2>Update user</h2>
-    <form action="vendor/updateUser.php" method="post">
+    <form action="function/updateUser.php" method="post">
         <input type="hidden" name="id" value="<?= $user_id ?>">
         <p>login</p>
         <input type="text" name="login" value="<?=$user['login'] ?>">

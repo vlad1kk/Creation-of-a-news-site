@@ -21,7 +21,7 @@
 <hr>
 
 <h2>Update news</h2>
-    <form action="vendor/updateNewsAdmin.php" method="post">
+    <form action="function/updateNewsAdmin.php" method="post">
         <input type="hidden" name="id" value="<?= $news_id ?>">
         <p>Name</p>
         <input type="text" name="title" value="<?=$news['title'] ?>">

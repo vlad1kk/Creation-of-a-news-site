@@ -5,13 +5,13 @@
     $password = strip_tags(trim($_POST['password']));
 
     if(mb_strlen($login) < 3 || mb_strlen($login) > 90) {
-        echo "Недопустима довжина логіна";
+        echo '<p style="font-weight: bold;height: 100vh; font-size: 30px;display: flex;align-items: center;justify-content: center; color: red; ">Invalid login length</a></p>';
         exit();
     } else if(mb_strlen($name) < 3 || mb_strlen($name) > 50) {
-        echo "Недопустима довжина імʼя";
+        echo '<p style="font-weight: bold;height: 100vh; font-size: 30px;display: flex;align-items: center;justify-content: center; color: red; ">Invalid name length</a></p>';
         exit();
     } else if(mb_strlen($password) < 2 || mb_strlen($password) > 10) {
-        echo "Недопустима довжина пароля(від 2 до 10 символів)";
+        echo '<p style="font-weight: bold;height: 100vh; font-size: 30px;display: flex;align-items: center;justify-content: center; color: red; ">Invalid password length (from 2 to 10 characters)</a></p>';
         exit();
     }
 

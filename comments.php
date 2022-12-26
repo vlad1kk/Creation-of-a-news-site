@@ -30,7 +30,7 @@ $com = mysqli_fetch_all($com);
     <hr>
 
     <h3>Add a comment</h3>
-    <form action="vendor/comments.php" method="post">
+    <form action="function/comments.php" method="post">
         <input type="hidden" name="id" value="<?= $news_id ?>">
         <textarea name="comments" placeholder="Comment"></textarea>
         <button type="submit">Send</button>
@@ -51,7 +51,7 @@ $com = mysqli_fetch_all($com);
             <tr>
                 <td><?= $cmt[2] ?></td>
                 <td><a href="updateComment.php?id=<?= $cmt[0] ?>">Update</a></td>
-                <td><a style="color: red;" href="vendor/deleteComment.php?id=<?= $cmt[0] ?>">Delete</a></td>
+                <td><a style="color: red;" href="function/deleteComment.php?id=<?= $cmt[0] ?>">Delete</a></td>
             </tr>
         <?php
         }

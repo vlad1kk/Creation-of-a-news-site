@@ -1,10 +1,8 @@
 <?php
 require_once "../config/connect.php";
-$comment = $_POST["comment"];
-$id = $_POST["id"];
+$id = $_GET["id"];
 
-
-mysqli_query($connect , "UPDATE `comments` SET `comment` = '$comment' WHERE `comments`.`id` = $id");
+mysqli_query($connect , "DELETE FROM `comments` WHERE `comments`.`id` = $id");
 ?>
 
 <!DOCTYPE html>
@@ -15,14 +13,14 @@ mysqli_query($connect , "UPDATE `comments` SET `comment` = '$comment' WHERE `com
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style(user).css">
-    <title>Update comment</title>
+    <title>Deleting comment</title>
 </head>
 
 <body>
-    <a href="http://localhost:8888/ownsite/user.php">Main</a>
+    <a href="http://localhost:8888/ownsite/admin.php">Main</a>
 
     <hr>
-    <span class="delCom">Comment Updated successfully</span>
+    <span class="delCom">Comment deleted successfully</span>
     
 
 

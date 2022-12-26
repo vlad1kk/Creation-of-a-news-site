@@ -19,7 +19,7 @@ $news = mysqli_fetch_all($news);
 
 <hr>
     <h2>Add news</h2>
-    <form action="vendor/create.php" method="post">
+    <form action="function/create.php" method="post">
         <p>Name</p>
         <input type="text" name="title">
         <p>Description</p>
@@ -45,7 +45,7 @@ $news = mysqli_fetch_all($news);
                 <td><?= $item[2] ?></td>
                 <td><a href="comments.php?id=<?= $item[0] ?>">View</a></td>
                 <td><a href="update.php?id=<?= $item[0] ?>">Update</a></td>
-                <td><a href="vendor/delete.php?id=<?= $item[0] ?>">Delete</a></td>
+                <td><a href="function/delete.php?id=<?= $item[0] ?>">Delete</a></td>
             </tr>
         <?php
         }

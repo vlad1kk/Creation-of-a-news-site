@@ -37,7 +37,7 @@ $news = mysqli_fetch_all($news);
                 <td><?= $user[1] ?></td>
                 <td><?= $user[3] ?></td>
                 <td><a style="color: #3f75c5;" href="UpdateUser.php?id=<?= $user[0] ?>">Update</a></td>
-                <td><a style="color: red;" href="vendor/deleteUser.php?id=<?= $user[0] ?>">Delete</a></td>
+                <td><a style="color: red;" href="function/deleteUser.php?id=<?= $user[0] ?>">Delete</a></td>
             </tr>
         <?php
         }
@@ -62,9 +62,9 @@ $news = mysqli_fetch_all($news);
                 <td><?= $item[0] ?></td>
                 <td><?= $item[1] ?></td>
                 <td><?= $item[2] ?></td>
-                <td><a href="admin/comments.php?id=<?= $item[0] ?>">View</a></td>
+                <td><a href="commentsAdmin.php?id=<?= $item[0] ?>">View</a></td>
                 <td><a href="updateNewsAdmin.php?id=<?= $item[0] ?>">Update</a></td>
-                <td><a href="vendor/deleteNewsAdmin.php?id=<?= $item[0] ?>">Delete</a></td>
+                <td><a href="function/deleteNewsAdmin.php?id=<?= $item[0] ?>">Delete</a></td>
             </tr>
         <?php
         }

@@ -21,7 +21,7 @@
 <hr>
 
 <h2>Update comment</h2>
-    <form action="vendor/updateComment.php" method="post">
+    <form action="function/updateComment.php" method="post">
         <input type="hidden" name="id" value="<?= $comment_id ?>">
         <p>Description</p>
         <textarea name="comment"> <?=$comment['comment'] ?></textarea>
